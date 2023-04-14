@@ -9,7 +9,7 @@ const getAll = async (req, res) => {
 const getById = async (req, res) => {
   const { id } = req.params;
 
-  // один из рабочих вариантов поиска по id
+  // --- один из рабочих вариантов поиска по id ---
   // const contact = await Contact.findOne({ _id: id });
 
   const contact = await Contact.findById(id);
